@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #5d3bee;
+  --black-color: #080415;
+  --gray-color: #51586a;
+  --white-color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.6rem;
+}
+
+/* Common */
+a,
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  background-color: #ccc;
+  height: 40px;
+}
+
+.header__inner {
+  text-align: center;
+}
