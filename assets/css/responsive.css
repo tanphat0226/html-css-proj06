@@ -1,9 +1,102 @@
 /* PC */
 @media (min-width: 992px) {
+  .hide-on-pc {
+    display: none;
+  }
 }
 
 /* Tablet and Mobile */
 @media (max-width: 991.98px) {
+  .header__inner {
+    flex-direction: row-reverse;
+  }
+
+  .header-mobile__close,
+  .header__bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    border: 1px solid rgba(93, 59, 238, 0.2);
+    cursor: pointer;
+  }
+
+  .header__mail {
+    margin-left: auto;
+  }
+
+  .header__mail-text,
+  .header__navbar {
+    display: none;
+  }
+
+  .header-mobile__overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+
+  .header-mobile__checkbox:checked ~ .header-mobile__overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header-mobile__checkbox:checked ~ .header-mobile__container {
+    transform: translateX(0);
+  }
+
+  .header-mobile__container {
+    position: fixed;
+    inset: 0 0 0 40%;
+    z-index: 3;
+    padding: 20px 60px 0 30px;
+    background-color: var(--white-color);
+    transform: translateX(100%);
+    transition: 0.5s ease;
+  }
+
+  .header-mobile__close {
+    margin-left: auto;
+    color: #080415;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .header-mobile__head {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  #mobile-navbar {
+    margin-top: 20px;
+    li {
+      border-top: 1px solid #d6d3e2;
+    }
+
+    a {
+      display: block;
+      text-align: right;
+      padding: 22px 0;
+    }
+
+    a:active {
+      color: var(--primary-color);
+    }
+  }
 }
 
 /* Tablet */
@@ -12,4 +105,43 @@
 
 /* Mobile */
 @media (max-width: 767.98px) {
+  .header__inner {
+    padding: 0 13px;
+    border-bottom: 1px solid #d6d3e2;
+  }
+
+  .header__bars {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-mobile__close,
+  .header__mail-icon {
+    width: 32px;
+    height: 32px;
+
+    > img {
+      width: 16.696px;
+      height: 11.13px;
+    }
+  }
+
+  .header-mobile__container {
+    inset: 0 0 0 20%;
+    padding: 0 20px 0 20px;
+  }
+
+  .header__logo {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #mobile-navbar {
+    a {
+      padding: 18px 0;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+  }
 }

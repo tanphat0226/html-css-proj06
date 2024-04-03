@@ -38,10 +38,71 @@ a {
 
 /* Header */
 .header {
-  background-color: #ccc;
-  height: 40px;
+  background-color: #fdfdfd;
 }
 
 .header__inner {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.header__logo {
+  width: 100px;
+  height: 100px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.header__mail-icon,
+.header__mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__mail-text:hover {
+  color: var(--primary-color);
+}
+
+.header__mail-text {
+  color: var(--black-color);
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.36;
+  text-decoration-line: underline;
+}
+
+.header__mail-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  border: 1px solid rgba(93, 59, 238, 0.2);
+  margin-right: 10px;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item-link:hover {
+  color: var(--primary-color);
+  text-shadow: 0 0 1px currentColor;
+}
+
+.navbar__item-link {
+  padding: 8px 22px;
+  color: var(--gray-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.navbar__item-link:last-child {
+  padding-right: 0;
+}
+
+/* Hero */
