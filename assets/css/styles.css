@@ -36,6 +36,13 @@ a {
   text-decoration: none;
 }
 
+.item {
+  border: 1px solid #d6d3e2;
+  background-color: #eee;
+  height: 200px;
+  text-align: center;
+}
+
 /* Header */
 .header {
   background-color: #fdfdfd;
