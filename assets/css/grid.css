@@ -3,7 +3,7 @@
 .container-fluid,
 .container {
   --column-size: 12;
-  --spacer: 14px;
+  --spacer: 40px;
 
   width: 100%;
   margin-inline: auto;
