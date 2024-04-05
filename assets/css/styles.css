@@ -241,3 +241,46 @@ a {
     color: var(--black-color);
   }
 }
+
+/* Clients */
+.clients {
+  padding-top: 98px;
+
+  .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .clients__title {
+    position: relative;
+    padding-left: 99px;
+    width: 352px;
+    color: var(--black-color);
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: -0.168rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 0;
+      width: 86px;
+      height: 2px;
+      display: inline-block;
+      background-color: #5d3bee;
+    }
+  }
+
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 36px;
+  }
+
+  .clients__item {
+    width: calc(100% / 4);
+  }
+}
