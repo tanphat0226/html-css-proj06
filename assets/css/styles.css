@@ -277,10 +277,15 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     row-gap: 36px;
+    margin-left: -20px;
   }
 
   .clients__item {
+    min-width: 175px;
+    display: block;
     width: calc(100% / 4);
+    padding-left: 20px;
   }
 }
