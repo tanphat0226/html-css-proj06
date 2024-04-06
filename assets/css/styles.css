@@ -74,6 +74,41 @@ a {
   }
 }
 
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: rgba(8, 4, 21, 0.2);
+  }
+
+  .dot--active {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: #5d3bee;
+      border-radius: 12px;
+    }
+  }
+}
+
 /* Header */
 .header--sticky {
   position: sticky;
@@ -287,5 +322,82 @@ a {
     display: block;
     width: calc(100% / 4);
     padding-left: 20px;
+  }
+}
+
+.special {
+  padding-top: 133px;
+
+  .special__title {
+    color: var(--black-color);
+
+    text-align: center;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -0.224rem;
+  }
+
+  .special__desc {
+    display: block;
+    margin-inline: auto;
+    width: 534px;
+    margin-top: 20px;
+
+    color: var(--gray-color);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+  }
+
+  & .row {
+    margin-top: 60px;
+  }
+
+  .special-item {
+    padding: 33px 43px;
+    background: #fbfaff;
+
+    .special-item__thumb-bg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 74px;
+      height: 74px;
+
+      border-radius: 100%;
+      border: 1px solid rgba(8, 4, 21, 0.2);
+
+      .special-item__img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+      }
+    }
+
+    .special-item__title {
+      margin-top: 22px;
+      color: var(--black-color);
+      font-size: 3.2rem;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.128rem;
+    }
+
+    .special-item__desc {
+      margin-top: 15px;
+      color: var(--gray-color);
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.66;
+    }
+  }
+
+  .special__dots {
+    justify-content: center;
+    margin-inline: auto;
+    margin-top: 30px;
   }
 }
