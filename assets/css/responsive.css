@@ -125,6 +125,16 @@
       }
     }
   }
+
+  .project {
+    .project__title {
+      font-size: 3.6rem;
+    }
+
+    .project__desc {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 /* Tablet */
