@@ -192,6 +192,13 @@
       }
     }
   }
+
+  .contact {
+    .contact__decor:nth-child(2),
+    .contact__decor:nth-child(3) {
+      display: none;
+    }
+  }
 }
 
 /* Tablet */
@@ -260,6 +267,12 @@
       .about__stat-desc {
         text-align: center;
       }
+    }
+  }
+  .contact {
+    .contact__decor:nth-child(1) {
+      top: 0;
+      left: -120px;
     }
   }
 }
@@ -569,6 +582,42 @@
     .gallery__dot {
       margin-top: 40px;
       justify-content: center;
+    }
+  }
+
+  /* Contact */
+  .contact {
+    margin-top: 120px;
+
+    .contact__inner {
+      padding: 36px 0;
+    }
+
+    .contact__img {
+      width: 48px;
+      height: 48px;
+    }
+
+    .contact__title {
+      width: 225px;
+      margin-inline: auto;
+    }
+
+    .contact__desc {
+      width: 100%;
+    }
+
+    .contact__btn {
+      margin-top: 30px;
+      min-width: 147px;
+
+      font-size: 1.6rem;
+    }
+    .contact__decor:nth-child(1) {
+      width: 566.578px;
+      height: 454.338px;
+      top: -70px;
+      left: -120px;
     }
   }
 }

@@ -129,16 +129,16 @@
               <nav class="header__navbar">
                 <ul class="navbar__list" id="pc-navbar">
                   <li class="navbar__item">
-                    <a href="#" class="navbar__item-link">Projects</a>
+                    <a href="#projects" class="navbar__item-link">Projects</a>
                   </li>
                   <li class="navbar__item">
-                    <a href="#" class="navbar__item-link">Journey</a>
+                    <a href="#about" class="navbar__item-link">Journey</a>
                   </li>
                   <li class="navbar__item">
-                    <a href="#" class="navbar__item-link">Service</a>
+                    <a href="#fag" class="navbar__item-link">Service</a>
                   </li>
                   <li class="navbar__item">
-                    <a href="#" class="navbar__item-link">Contact</a>
+                    <a href="#contact" class="navbar__item-link">Contact</a>
                   </li>
                 </ul>
               </nav>
@@ -443,7 +443,7 @@
       </section>
 
       <!-- Projects -->
-      <section class="project container-fluid">
+      <section id="projects" class="project container-fluid">
         <div class="project__inner container">
           <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1">
             <div class="col">
@@ -549,7 +549,7 @@
       </section>
 
       <!-- About me -->
-      <div class="about container-fluid">
+      <section id="about" class="about container-fluid">
         <div class="container">
           <header class="about-header">
             <p class="about-header__head">
@@ -593,10 +593,10 @@
             <img src="assets/img/about-img.png" alt="" class="about__img" />
           </figure>
         </div>
-      </div>
+      </section>
 
       <!-- Testimonal -->
-      <div class="testimonal container-fluid">
+      <section class="testimonal container-fluid">
         <div class="container">
           <h2 class="testimonal__title section-title">What people says</h2>
           <p class="testimonal__desc section-desc">
@@ -649,10 +649,10 @@
             class="testimonal__decor"
           />
         </div>
-      </div>
+      </section>
 
       <!-- FAQ -->
-      <div class="faq">
+      <section id="fag" class="faq">
         <div class="container">
           <h2 class="faq__title section-title">
             A few questions <br />
@@ -766,10 +766,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Gallery -->
-      <div class="gallery">
+      <section class="gallery">
         <div class="container">
           <header class="gallery-header">
             <h2 class="gallery__title section-title">My atmosphere</h2>
@@ -817,10 +817,50 @@
             <span class="dot"></span>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact__inner">
+            <img
+              src="./assets/img/contact-img.png"
+              alt=""
+              class="contact__img"
+            />
+            <h2 class="contact__title section-title">
+              Got a project? Let’s talk
+            </h2>
+            <p class="contact__desc section-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+              non nisl tincidunt ut elementum turpis.
+            </p>
+            <a href="#!" class="btn btn--primary contact__btn">Book a Call</a>
+            <div>
+              <img
+                class="contact__decor"
+                src="./assets/img/contact-decor-01.svg"
+                alt=""
+              />
+              <img
+                class="contact__decor"
+                src="./assets/img/contact-decor-02.svg"
+                alt=""
+              />
+              <img
+                class="contact__decor"
+                src="./assets/img/contact-decor-03.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
