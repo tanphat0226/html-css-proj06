@@ -545,4 +545,30 @@
       }
     }
   }
+
+  .gallery {
+    padding-top: 120px;
+    .gallery__desc {
+      width: 100%;
+    }
+
+    .gallery-list {
+      margin-top: 60px;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+
+    .gallery__link {
+      font-size: 2rem;
+    }
+
+    .gallery-item__img {
+      height: 503px;
+    }
+
+    .gallery__dot {
+      margin-top: 40px;
+      justify-content: center;
+    }
+  }
 }
