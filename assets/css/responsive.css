@@ -667,5 +667,22 @@
     .footer__copyright-policy {
       margin-bottom: 20px;
     }
+
+    .footer__navbar {
+      width: 100%;
+    }
+
+    .navbar__list {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .navbar__item-link {
+      font-size: 1.6rem;
+
+      &:last-child {
+        padding-inline: unset;
+      }
+    }
   }
 }
