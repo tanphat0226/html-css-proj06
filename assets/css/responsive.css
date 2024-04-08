@@ -433,6 +433,10 @@
   .project {
     .project__inner {
       padding: 69px 0 60px;
+
+      .row {
+        margin: unset;
+      }
     }
 
     .project__desc {
@@ -459,6 +463,43 @@
       .project-item__desc {
         padding-right: 22px;
       }
+    }
+  }
+
+  .testimonal {
+    padding-top: 121px;
+    padding-bottom: 67px;
+
+    .testimonal__decor {
+      width: 96.163px;
+      height: 71.126px;
+    }
+
+    .testimonal__title {
+      text-align: center;
+    }
+
+    .testimonal__desc {
+      width: 100%;
+    }
+
+    .testimonal__content {
+      margin-top: 40px;
+    }
+
+    .testimonal__quote {
+      width: 100%;
+      font-size: 1.8rem;
+    }
+
+    .testimonal__author {
+      margin-top: 48px;
+    }
+    .testimonal__author-name {
+      font-size: 2.4rem;
+    }
+    .testimonal__dot {
+      margin-top: 20px;
     }
   }
 }
