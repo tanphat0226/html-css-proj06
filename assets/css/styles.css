@@ -375,6 +375,7 @@ a {
     padding: 33px 43px;
     background: #fbfaff;
     border: 1px solid #fbfaff;
+    cursor: pointer;
 
     .special-item__thumb-bg {
       display: flex;
