@@ -109,6 +109,7 @@ a {
     height: 16px;
     border-radius: 100%;
     background-color: rgba(8, 4, 21, 0.2);
+    cursor: pointer;
   }
 
   .dot--active {
@@ -823,6 +824,7 @@ a {
   }
 
   .gallery-item__figure {
+    cursor: pointer;
     &:hover {
       opacity: 0.8;
     }
@@ -875,6 +877,8 @@ a {
   }
 
   .contact__btn {
+    position: relative;
+    z-index: 1;
     margin-top: 40px;
   }
 
@@ -954,6 +958,10 @@ a {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .footer__copyright-policy-link:nth-child(2) {
