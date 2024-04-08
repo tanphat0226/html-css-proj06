@@ -6,6 +6,13 @@
   }
 }
 
+/* Small PC */
+@media (min-width: 992px) and (max-width: 1024px) {
+  .hide-on-small-pc {
+    display: none;
+  }
+}
+
 /* Tablet and Mobile */
 @media (max-width: 991.98px) {
   .section-title {
