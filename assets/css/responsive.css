@@ -199,6 +199,28 @@
       display: none;
     }
   }
+  .footer {
+    margin-top: 120px;
+
+    .footer__inner {
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 20px;
+      height: 300px;
+
+      .footer__mail {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .navbar__list {
+        padding-bottom: 58px;
+      }
+    }
+  }
 }
 
 /* Tablet */
@@ -618,6 +640,25 @@
       height: 454.338px;
       top: -70px;
       left: -120px;
+    }
+  }
+
+  .footer {
+    .footer__copyright {
+      margin-top: 64px;
+      justify-content: space-between;
+      border: none;
+      text-align: center;
+      flex-direction: column-reverse;
+    }
+
+    .footer__copyright-text {
+      padding-top: 20px;
+      border-top: 1px solid rgba(12, 7, 32, 0.2);
+    }
+
+    .footer__copyright-policy {
+      margin-bottom: 20px;
     }
   }
 }
