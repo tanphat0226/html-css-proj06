@@ -274,7 +274,6 @@
   }
 
   .header__inner {
-    padding: 0 13px;
     border-bottom: 1px solid #d6d3e2;
   }
 
@@ -500,6 +499,50 @@
     }
     .testimonal__dot {
       margin-top: 20px;
+    }
+  }
+
+  .faq {
+    .faq__title {
+      width: 100%;
+    }
+
+    .faq__item {
+      .faq__item-title {
+        display: inline-block;
+        width: 264px;
+        font-size: 2.4rem;
+      }
+
+      .faq__item-desc {
+        width: 316px;
+        font-size: 1.6rem;
+      }
+
+      .faq__item-checkbox:checked ~ .faq__item-icon {
+        right: 0;
+        top: 2px;
+
+        &::after {
+          content: url(../icon/minus-6x6-icon.svg);
+        }
+      }
+
+      .faq__item-icon {
+        right: 0;
+        top: 3px;
+        width: 33px;
+        height: 33px;
+
+        &::after {
+          content: url(../icon/plus-6x6-icon.svg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 6.57px;
+          height: 6.57px;
+        }
+      }
     }
   }
 }

@@ -328,7 +328,7 @@ a {
       width: 86px;
       height: 2px;
       display: inline-block;
-      background-color: #5d3bee;
+      background-color: var(--primary-color);
     }
   }
 
@@ -669,6 +669,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 15px;
   }
 
   .testimonal__author-img-wrap {
@@ -703,5 +704,102 @@ a {
 
   .testimonal__dot {
     margin-top: 40px;
+  }
+}
+
+/* FAQ */
+.faq {
+  padding-top: 95px;
+  padding-bottom: 20px;
+  .faq__title {
+    width: 575px;
+  }
+
+  .faq__list {
+    margin-top: 80px;
+  }
+
+  .faq__item + .faq__item {
+    margin-top: 60px;
+  }
+
+  .faq__item {
+    position: relative;
+
+    .faq__item-title {
+      color: var(--black-color);
+      font-size: 3.2rem;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.128rem;
+      cursor: pointer;
+    }
+
+    .faq__item-icon {
+      position: absolute;
+      right: 0;
+      bottom: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid rgba(22, 26, 28, 0.2);
+      cursor: pointer;
+
+      &::after {
+        content: url(../icon/plus-icon.svg);
+        display: block;
+        width: 14.08px;
+        height: 14.08px;
+      }
+    }
+
+    .faq__item-checkbox:checked ~ .faq__item-desc {
+      margin-top: 23px;
+      display: block;
+    }
+
+    .faq__item-checkbox:checked ~ .faq__item-title {
+      color: var(--primary-color);
+    }
+
+    .faq__item-checkbox:checked ~ .faq__item-line {
+      background-color: var(--primary-color);
+    }
+
+    .faq__item-checkbox:checked ~ .faq__item-icon {
+      top: 35px;
+      bottom: initial;
+      border-color: rgba(93, 59, 238, 0.2);
+
+      &::after {
+        content: url(../icon/minus-icon.svg);
+        display: flex;
+        align-items: center;
+        align-items: center;
+        margin-top: -6px;
+        width: 14.08px;
+        height: 2px;
+      }
+    }
+
+    .faq__item-desc {
+      margin-top: 33px;
+      width: 487px;
+      display: none;
+      color: var(--gray-color);
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.66;
+    }
+
+    .faq__item-line {
+      margin-top: 22px;
+      width: 100%;
+      height: 2px;
+      background-color: var(--black-color);
+    }
   }
 }
