@@ -448,14 +448,17 @@ a {
   }
 
   .project-item {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px 24px 24px 34px;
     background-color: var(--white-color);
     margin-top: 20px;
+    overflow: hidden;
 
     .project-item__content {
+      position: relative;
       margin-right: 10px;
     }
 
@@ -496,6 +499,8 @@ a {
     }
 
     .project-item__thumb-bg {
+      position: relative;
+      z-index: 1;
       display: flex;
       align-items: center;
       width: 246px;
@@ -509,6 +514,16 @@ a {
     .project-item__img {
       width: 100%;
       object-fit: cover;
+    }
+
+    &::after {
+      position: absolute;
+      top: -121px;
+      right: -125px;
+      content: url(../icon/project-decor.svg);
+      display: block;
+      width: 534.701px;
+      height: 509.911px;
     }
   }
 
