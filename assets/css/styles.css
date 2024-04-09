@@ -974,7 +974,7 @@ a {
   }
 
   .footer__copyright-policy-link {
-    color: var(--gray-color);
+    color: #525771;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66;
